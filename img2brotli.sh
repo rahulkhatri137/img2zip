@@ -37,8 +37,8 @@ cd input/
 mkdir compress
 python "$TOOLS_DIR/img2sdat/img2sdat.py" "system.img" -o "compress" -v "4" -p "system"
 cd compress
-brotli system.new.dat -2
-mv "system.new.dat.br" "$OUTPUT_DIR"
+brotli system.new.dat -7jft
+mv "system.*" "$OUTPUT_DIR"
 cd "$PROJECT_DIR"
 
 # Check if its done
